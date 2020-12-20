@@ -28,6 +28,7 @@ Then clone this Repository from : https://github.com/evalexp/Students-Address-Bo
 open the folder that you clone, then type :
 ```bash
 npm install
+node ./node_modules/electron/install.js
 ```
 
 If you are in mainland, it would take times, but you can speed up this process by modifying the configuration file '%userprofile%/.npmrc'

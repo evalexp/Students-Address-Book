@@ -99,7 +99,7 @@ function createWindow() {
     // request to recovery, try to load file, and send the data to render process
     ipcMain.on('recovery', (event, message) => {
         let filePath = dialog.showOpenDialogSync(win, {
-            message: '请选择本分数据存在位置',
+            message: '请选择备份数据存在位置',
             title: '请选择备份数据存储位置',
             defaultPath: app.getPath('home'),
             filters: file_filter
