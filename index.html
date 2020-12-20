@@ -285,7 +285,7 @@
           <el-input v-model="editStudentform.address" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="出生日期" :label-width="formLabelWidth">
-          <el-date-picker v-model="editStudentform.date" type="date" placeholder="选择日期" @blur="updateData(scope)">
+          <el-date-picker v-model="editStudentform.date" type="date" placeholder="选择日期">
           </el-date-picker>
         </el-form-item>
       </el-form>
@@ -333,8 +333,8 @@
   </div>
 </body>
 
-<!-- <script src="src/lib/vue-dev.js"></script> -->
-<script src="src/lib/vue.js"></script>
+<script src="src/lib/vue-dev.js"></script>
+<!-- <script src="src/lib/vue.js"></script> -->
 <script src="src/lib/element.js"></script>
 <script src="src/static/js/index.js"></script>
 <link rel="stylesheet" href="src/lib/element.css">

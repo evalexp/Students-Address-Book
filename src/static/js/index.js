@@ -242,7 +242,7 @@ let myApp = new Vue({
             this.loading = true
             let data = this.newStudentform;
             let d = new Date(data.date);
-            scope.row.age = new Date().getFullYear() - d.getFullYear();
+            data.age = new Date().getFullYear() - d.getFullYear();
             ipcRender.send('insert-data', data)
         },
         // menu call this function
