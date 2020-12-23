@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>学生通讯录</title>
   <!-- to enable vue.js, have to add policy 'unsafe-eval' -->
   <meta http-equiv="Content-Security-Policy" content="script-src * 'self' 'unsafe-inline' 'unsafe-eval';" />
 </head>
-
 <body style="background: white;">
   <div id='app'>
     <el-container :style="'height: '+winHeight+'; border: 1px solid #eee'">
@@ -63,7 +61,6 @@
             <span>学生通信录</span>
           </el-dropdown>
         </el-header>
-
         <el-main>
           <el-table ref="Table" :data="tableData" border v-loading="loading" @cell-dblclick="handleEdit"
             @selection-change="handleSelectionChange" :row-style="selectedRow">
@@ -108,7 +105,6 @@
                 </el-form>
               </template>
             </el-table-column>
-
             <!-- show in short table columns setting -->
             <el-table-column type="selection"></el-table-column>
             <el-table-column prop="code" label="学生编号" width="120" sortable>
@@ -332,12 +328,10 @@
     </el-dialog>
   </div>
 </body>
-
 <script src="src/lib/vue-dev.js"></script>
 <!-- <script src="src/lib/vue.js"></script> -->
 <script src="src/lib/element.js"></script>
 <script src="src/static/js/index.js"></script>
 <link rel="stylesheet" href="src/lib/element.css">
 <link rel="stylesheet" href="src/static/css/index.css">
-
 </html>

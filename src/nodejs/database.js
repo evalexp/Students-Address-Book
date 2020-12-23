@@ -113,7 +113,6 @@ function getAllDataFromFile(file) {
     } catch (error) {
         return []
     }
-
 }
 
 exports.updateByID = updateByID
